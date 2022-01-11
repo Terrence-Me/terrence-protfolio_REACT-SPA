@@ -1,8 +1,10 @@
 import { Fragment } from 'react';
 import classes from './Header.module.css';
-import backgroundImage from './assets/images/simon-berger-2JONUbTfN38-unsplash.jpg';
+import resumeData from '../resumeData';
+// import backgroundImage from './assets/images/simon-berger-2JONUbTfN38-unsplash.jpg';
+import { FaArrowCircleDown, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
-function Header() {
+function Header(props) {
   return (
     <Fragment>
       <header>
@@ -25,9 +27,30 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <div className={classes['main-image']}>
-          <img src={backgroundImage} alt="" />
+        <div className={classes.banner}>
+          <div className={classes['banner-text']}>
+            <h1> I am {resumeData.name}.</h1>
+            <h3>
+              I am a {resumeData.role}. {resumeData.roleDescription}
+            </h3>
+            <hr />
+            <ul className={classes.social}>
+              <a>
+                <FaLinkedinIn />
+              </a>
+              <a>
+                <FaGithub />
+              </a>
+            </ul>
+          </div>
         </div>
+
+        {/* <div className={classes['main-image']}>
+          <img src={backgroundImage} alt="" />
+        </div> */}
+        <p>
+          <FaArrowCircleDown />
+        </p>
       </header>
     </Fragment>
   );
