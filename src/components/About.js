@@ -1,31 +1,35 @@
 import profile from './assets/images/Profile_picture.jpg';
 import resumeData from '../resumeData';
-import classes from './About.module.css';
+
+import './About.css';
 
 function About() {
   return (
-    <section className={classes['about-section']}>
-      <div className={classes.row}>
-        <div className={(classes, classes.three, classes.columns)}>
-          <img className={classes['profile-pic']} src={profile} alt="profile" />
+    <section id="about">
+      <div className="row">
+        <div className="three columns">
+          <img className="profile-pic" src={profile} alt="profile" />
         </div>
-        <div className={(classes[(' columns', 'main-col')], classes.nine)}>
+        <div className="nine columns main-col">
           <h2> About Me </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel
-            ad sapiente aut ab, asperiores eum, officia quos, fugiat molestias
-            aliquam fuga ipsa ea porro corrupti repellendus totam. Nihil,
-            inventore?
+            I am a seasoned professional with over 20-years of work experience.
+            I learn quickly and easily adapt to changing environments. Worked
+            through 1000+ hours of bootcamp structure, learning JavaScript,
+            Node.js, and React.js. Eager to tackle web development and design
+            challenges to achieve lasting impacts on user experience. I've
+            recently completed 20-years of service to the U.S. Army and have
+            international experience, as well as experience in other cultures.
           </p>
-          <div>
-            <div className={classes['contact-details ']}>
+          <div className="row">
+            <div className="columns contact-details">
               <h2>Contact Details</h2>
-              <p>
-                <span>resumeData.name</span>
+              <p className="address">
+                <span>Terrence Meikle</span>
                 <br></br>
-                <span>resumeData.address</span>
+                <span>Terrence_Meikle@email</span>
                 <br></br>
-                <span>resumeData.website</span>
+                <span>https://github.com/Terrence-Me</span>
               </p>
             </div>
           </div>

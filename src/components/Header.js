@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import classes from './Header.module.css';
+import './Header.css';
 import resumeData from '../resumeData';
 // import backgroundImage from './assets/images/simon-berger-2JONUbTfN38-unsplash.jpg';
 import { FaArrowCircleDown, FaLinkedinIn, FaGithub } from 'react-icons/fa';
@@ -7,49 +7,72 @@ import { FaArrowCircleDown, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 function Header(props) {
   return (
     <Fragment>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">HOME</a>
+      <header id="home">
+        <nav id="nav-wrap">
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+            Show navigation
+          </a>
+          <a className="mobile-btn" href="#" title="Hide navigation">
+            Hide navigation
+          </a>
+          <ul id="nav" className="nav">
+            <li className="current">
+              <a className="smoothscroll" href="#home">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">ABOUT</a>
+              <a className="smoothscroll" href="#about">
+                About
+              </a>
             </li>
             <li>
-              <a href="#">RESUME</a>
+              <a className="smoothscroll" href="#resume">
+                Resume
+              </a>
             </li>
             <li>
-              <a href="#">WORKS</a>
+              <a className="smoothscroll" href="#portfolio">
+                Works
+              </a>
             </li>
+
             <li>
-              <a href="#">CONTACT</a>
+              <a className="smoothscroll" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
-        <div className={classes.banner}>
-          <div className={classes['banner-text']}>
-            <h1> I am {resumeData.name}.</h1>
-            <h3>
-              I am a {resumeData.role}. {resumeData.roleDescription}
+
+        <div className="row banner">
+          <div className="banner-text">
+            <h1 className="responsive-headline">I am {resumeData.name}.</h1>
+            <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>
+              I am a Junior full stack developer. I am solution-driven and adept
+              at contributing to highly collaborative work environments.
             </h3>
             <hr />
-            <ul className={classes.social}>
-              <a>
-                <FaLinkedinIn />
-              </a>
-              <a>
-                <FaGithub />
-              </a>
+            <ul className="social">
+              <li>
+                <a href=" # ">
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Terrence-Me">
+                  <FaGithub className="fa fa-github" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/* <div className={classes['main-image']}>
-          <img src={backgroundImage} alt="" />
-        </div> */}
-        <p>
-          <FaArrowCircleDown />
+        <p className="scrolldown">
+          <a className="smoothscroll" href="#about">
+            <FaArrowCircleDown className="icon-down-circle" />
+            <i className="icon-down-circle"></i>
+          </a>
         </p>
       </header>
     </Fragment>
