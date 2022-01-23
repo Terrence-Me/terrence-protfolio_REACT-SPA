@@ -1,5 +1,5 @@
 #portfolio {
-  background: #ebeeee;
+  background: #c2caca;
   padding-top: 90px;
   padding-bottom: 60px;
 }
@@ -172,4 +172,14 @@
 /* content fadeout */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
   opacity: 0;
+}
+
+.profileLinksDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.profileLinksDiv a {
+  font-weight: bold;
 }

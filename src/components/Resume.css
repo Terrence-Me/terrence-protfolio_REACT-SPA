@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  background: rgb(246, 242, 242);
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -103,28 +103,28 @@
   border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  width: 60%;
+.javaScript {
+  width: 30%;
   -moz-animation: photoshop 2s ease;
   -webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  width: 55%;
+.react {
+  width: 30%;
   -moz-animation: illustrator 2s ease;
   -webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  width: 50%;
+.nodejs {
+  width: 30%;
   -moz-animation: wordpress 2s ease;
   -webkit-animation: wordpress 2s ease;
 }
 .css {
-  width: 90%;
+  width: 60%;
   -moz-animation: css 2s ease;
   -webkit-animation: css 2s ease;
 }
 .html5 {
-  width: 80%;
+  width: 70%;
   -moz-animation: html5 2s ease;
   -webkit-animation: html5 2s ease;
 }

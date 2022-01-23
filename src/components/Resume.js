@@ -1,4 +1,4 @@
-import classes from './Resume.module.css';
+import './Resume.css';
 
 function Resume() {
   return (
@@ -25,7 +25,7 @@ function Resume() {
             <div className="twelve columns">
               <h3>Norwich University</h3>
               <p className="info">
-                International Relations
+                M.A. International Relations
                 <span>&bull;</span> <em className="date">Sep 2018</em>
               </p>
               {/* <p>{item.Achievements}</p> */}
@@ -68,20 +68,24 @@ function Resume() {
           <div className="bars">
             <ul className="skills">
               <li>
-                <span className="bar-expand "></span>
+                <span className="bar-expand html5"></span>
                 <em>HTML</em>
               </li>
               <li>
-                <span className="bar-expand "></span>
+                <span className="bar-expand css"></span>
                 <em>CSS</em>
               </li>
               <li>
-                <span className="bar-expand "></span>
+                <span className="bar-expand javaScript"></span>
                 <em>JavaScript</em>
               </li>
               <li>
-                <span className="bar-expand "></span>
+                <span className="bar-expand react"></span>
                 <em>React.js</em>
+              </li>
+              <li>
+                <span className="bar-expand nodejs"></span>
+                <em>Node.js</em>
               </li>
             </ul>
           </div>

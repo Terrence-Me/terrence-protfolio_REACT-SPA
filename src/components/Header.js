@@ -22,7 +22,7 @@ function Header(props) {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#about">
+              <a className="smoothscroll " href="#about">
                 About
               </a>
             </li>
