@@ -2,7 +2,7 @@
 import './Portfolio.css';
 import workout from './assets/images/workout-tracker.png';
 import workday from './assets/images/work-day-scheduler-screenshot.png';
-import mealPlanner from './assets/images/screenshot-meal-and-drink-generator-pg1.png';
+import mealPlanner from './assets/images/screenshot-meal-and-drink.png';
 import weatherApp from './assets/images/Screenshot-weather-dashboard.png';
 import noteTaker from './assets/images/Screenshot-note-taker.png';
 import riposte from './assets/images/Screenshot-reposte-comments.png';
